@@ -1,0 +1,72 @@
+@use "../../sass/variable" as *;
+
+.modalContainer {
+  font-family: Poppins;
+  background-color: white;
+  border-radius: 10px;
+  border: $azul-dnc 2px solid;
+  padding: 30px;
+  position: absolute;
+  margin: 0 auto;
+  top: 300px;
+  z-index: 2;
+  width: 800px;
+  height: 300px;
+  display:block;
+  align-items: center;
+
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li{
+    list-style: none;
+    position: relative;
+    top: 35px;
+    margin-right: 40px;
+  }
+  
+
+  h2{
+    position: relative;
+    top: 30px;
+    left: 60px;
+    font-size: 48px;
+    font-weight: 800;
+    color: black;
+  }
+
+  button{
+    position: relative;
+    top: 50px;
+    left: 90px;
+    width: 260px;
+    height: 60px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 30px;
+    margin-right: 20px;
+    color: white;
+  }
+
+  button#yesButton{
+    border: black 1px solid;
+    color: black;
+  }
+
+  button#noButton{
+    border: none;
+    background-color: $azul-dnc;
+  }
+
+  button#yesButton:hover{
+    background-color: green;
+    color: white;
+  }
+
+  button#noButton:hover{
+    background-color: red;
+  }
+}

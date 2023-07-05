@@ -77,6 +77,7 @@ function App() {
 
   function deleteAllTasks(){
     setTodoList(todoList.filter((todo) => todo.id === null));
+    alert("Todas as tasks foram deletadas!");
   }
 
   function openModal(typeOpenModal, taskId){

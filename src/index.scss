@@ -134,4 +134,31 @@
             color: #D9D9D9;
         }
     }
+
+    span#warning-none-tasks{
+        color: yellow;
+        font-size: 20px;
+        font-family: Poppins;
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    button#deleteAllTasks{
+        background-color: rgb(114, 2, 2);
+        color: $white;
+        font-size: 20px;
+        font-family: Poppins;
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+    }
+
+    button#deleteAllTasks:hover{
+        background-color: rgb(179, 5, 5);
+    }
 }

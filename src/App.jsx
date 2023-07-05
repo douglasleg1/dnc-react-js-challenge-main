@@ -75,6 +75,10 @@ function App() {
     setModalVisible(true)
   }
 
+  function deleteAllTasks(){
+    setTodoList(todoList.filter((todo) => todo.id === null));
+  }
+
   function openModal(typeOpenModal, taskId){
     const findTodo = todoList.find((todo) => todo.id === taskId);
     setTaskDescribe(findTodo)
@@ -153,6 +157,8 @@ function App() {
         <input type="text" name="todo" placeholder="Nova tarefa..." value={todoItem} onChange={captureInputText} />
         <button type="submit">+</button>
       </form>
+      {todoList.length > 0 ? <button id="deleteAllTasks" onClick={() => deleteAllTasks()}>Deletar todas as Tasks</button> : <span id="warning-none-tasks">Adicione uma nova Task para começar!</span>}
+      
       <Footer />
       {modalVisible && RenderModal()}
 

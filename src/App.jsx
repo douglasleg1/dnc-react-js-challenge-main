@@ -14,7 +14,6 @@ function App() {
   const [taskIdModal, setTaskIdModal] = useState(null);
   const [taskDescribe, setTaskDescribe] = useState('');
 
-
   function captureInputText(task) {
     setTodoItem(task.target.value);
   }
@@ -48,6 +47,7 @@ function App() {
   }
 
   useEffect(() => {
+
     if (editTodo) {
       setTodoItem(editTodo.text);
     } else {
@@ -136,7 +136,7 @@ function App() {
         {todoList.map((task) => (
           <tbody key={task.id}>
             <tr>
-              <td className={`list ${task.completed ? "complete" : "" }`}>{task.text}</td>
+              <td className={`list ${task.completed ? "complete" : "" }`}>ID: {task.id} - Task: {task.text}</td>
               <td className="img-complete">{<input type="checkbox" onClick={() => completeTodo(task.id)}></input>}</td>
               <td>
                 {<img src={edit} onClick={() => openModal('edit',task.id)}></img>}

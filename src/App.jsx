@@ -4,8 +4,7 @@ import edit from "./assets/editIcon.svg"
 import delet from "./assets/recycleIcon.svg"
 import "./index.scss"
 import ModalAction from "./components/ModalAction/ModalAction";
-import { FaLinkedin } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa"
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [todoList, setTodoList] = useState([]);
@@ -154,14 +153,7 @@ function App() {
         <input type="text" name="todo" placeholder="Nova tarefa..." value={todoItem} onChange={captureInputText} />
         <button type="submit">+</button>
       </form>
-      <div className="credits">
-        <h3>Autor: Douglas Dantas de Souza</h3>
-        <ul>
-          <li><a href="http://instagram.com/dougdantas_" target="__blank"><FaInstagram size={30} /></a></li>
-          <li><a href="http://github.com/douglasleg1" target="__blank"><FaGithub size={30}/></a></li>
-          <li><a href="https://www.linkedin.com/in/dougdantas/" target="__blank"><FaLinkedin size={30}/></a></li>
-        </ul>
-      </div>
+      <Footer />
       {modalVisible && RenderModal()}
 
     </section>

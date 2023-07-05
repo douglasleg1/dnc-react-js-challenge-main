@@ -134,27 +134,4 @@
             color: #D9D9D9;
         }
     }
-
-    .credits{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-
-        ul{
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            margin-top: 10px;
-        }
-
-        li{
-            margin-right: 10px;
-        }
-
-        a{
-            color: $white;
-        }
-    }
 }

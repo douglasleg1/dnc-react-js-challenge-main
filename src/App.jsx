@@ -123,6 +123,7 @@ function App() {
     <section className="App" >
       <Header />
       <h1>Otimize seu tempo e se organize com o nosso Planejador Diário.</h1>
+      <h2>Você possui {todoList.length} tasks adicionadas.</h2>
       <table>
         <thead >
           <tr className="title-header">

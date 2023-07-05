@@ -152,7 +152,7 @@ function App() {
         <input type="text" name="todo" placeholder="Nova tarefa..." value={todoItem} onChange={captureInputText} />
         <button type="submit">+</button>
       </form>
-
+          <h3>Autor: Douglas Dantas de Souza</h3>
       {modalVisible && RenderModal()}
 
     </section>
